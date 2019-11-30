@@ -37,6 +37,11 @@
 		color: #000000a6;
 		margin-right: 0px;
 	}
+	.hamburger-menu-trigger .bars{
+		font-size: 18px;
+		color: white;
+		margin-right: 0px;
+	}
 	.hamburger-menu-trigger{
 		cursor: pointer;
 		z-index:10000;
