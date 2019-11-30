@@ -14,13 +14,23 @@
 		margin: 0;
 		padding: 0;
 	}
+	.hamburger-menu-trigger .bars{
+		font-size: 18px;
+		color: white;
+		margin-right: 0px;
+	}
 	.hamburger-menu-trigger{
+		z-index:10;
 		position: fixed;
-		top:12px;
-		left:12px;
-		height:60px;
-		width:60px;
+		top: 12px;
+		left: 12px;
+		height: 36px;
+		width: 36px;
+		display: flex;
 		background-color: rgba(255, 255, 255, 0.5);
+		justify-content: center;
+		border-radius: 5px;
+		align-items: center;
 	}
 	</style>
 	<title>Quick Start - Leaflet</title>
