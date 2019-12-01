@@ -2,18 +2,17 @@
 <html>
 <head>
 	
-	<title>Quick Start - Leaflet</title>
+	<title>TG Map</title>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,700&display=swap&subset=chinese-traditional" rel="stylesheet"><link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/semantic/dist/semantic.min.css">
 	<script
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
-	<script src="semantic/dist/semantic.min.js"></script>
+	<script src="http://<?php echo $_SERVER['HTTP_HOST'];?>/semantic/dist/semantic.min.js"></script>
 </head>
 <body>
 <style>
@@ -24,22 +23,23 @@
 		html.ios,
 		html.ios body {
 		height: initial !important;
-  box-sizing: border-box;
-		}
+  		box-sizing: border-box;
+		font-family: 'Noto Sans TC', sans-serif;
+		font-weight:400;
+	}
+	a{display:block;}
+	a:hover{text-decoration:underline}
+	a span:hover{text-decoration:underline}
 	body {
 		margin: 0;
 		padding: 0;
 		color: #000000a6;
-		box-sizing
+		box-sizing:border-box;
+		font-family: 'Noto Sans TC', sans-serif;
 	}
 	.hamburger-menu-trigger .bars{
 		font-size: 18px;
 		color: #000000a6;
-		margin-right: 0px;
-	}
-	.hamburger-menu-trigger .bars{
-		font-size: 18px;
-		color: white;
 		margin-right: 0px;
 	}
 	.hamburger-menu-trigger{
@@ -56,22 +56,7 @@
 		border-radius: 5px;
 		align-items: center;
 	}
-	.leaflet-bar a, .leaflet-bar a:hover{
-		width:28px;
-		height:28px;
-		background-color: rgba(255, 255, 255, 0.75)!important;
-		color: #000000a6;
-	}
-	.leaflet-bar{
-		box-shadow: 0 0 0 0;
-	}
-	.leaflet-left{
-		right:10px!important;
-		left:unset!important;
-	}
-	.leaflet-left .leaflet-control{
-		margin-right:15px;
-	}
+	
 	
 	.mobile-vertical-sidebar-container{
 		background: white;
@@ -112,7 +97,8 @@
 					require './views/about.php';
 					break;
 				case '/news':
-					require './views/news.php';
+				case '/news/':
+					require './views/news/news.php';
 					break;
 				// Everything else
 				default:
@@ -126,7 +112,10 @@
 </body>
 
 <script>
-	$('.ui.sidebar').sidebar( 'attach events', '.hamburger-menu-trigger').sidebar('hide');
+	$('.ui.sidebar')
+  	.sidebar('setting', 'transition', 'overlay')
+	.sidebar( 'attach events', '.hamburger-menu-trigger')
+	.sidebar('hide');
 </script>
 
 

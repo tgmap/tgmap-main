@@ -8,3 +8,8 @@ $ npm install semantic-ui --save
 $ cd semantic/
 $ gulp build
 ```
+
+#Run the server
+```sh
+php -S localhost:8000 
+```

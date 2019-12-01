@@ -4,4 +4,22 @@
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="leaflet-heat.js"></script>
 <script src="loadScripts.js"></script>
+<style>
+    .leaflet-bar a, .leaflet-bar a:hover{
+		width:28px;
+		height:28px;
+		background-color: rgba(255, 255, 255, 0.75)!important;
+		color: #000000a6;
+	}
+	.leaflet-bar{
+		box-shadow: 0 0 0 0;
+	}
+	.leaflet-left{
+		right:10px!important;
+		left:unset!important;
+	}
+	.leaflet-left .leaflet-control{
+		margin-right:15px;
+	}
+</style>
 <div id="mapid" style="width: 100vw; height: 100vh;"></div>
