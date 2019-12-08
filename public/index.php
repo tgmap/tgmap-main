@@ -90,7 +90,7 @@
 			switch ($request_uri[0]) {
 				// Home page
 				case '/':
-					require './views/home.php';
+					require './views/home/home.php';
 					break;
 				// About page
 				case '/about':
@@ -102,7 +102,7 @@
 					break;
 				// Everything else
 				default:
-					require './views/home.php';
+					require './views/home/home.php';
 					// header('HTTP/1.0 404 Not Found');
 					// require '../views/404.php';
 					break;
