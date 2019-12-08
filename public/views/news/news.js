@@ -48,11 +48,11 @@ $(document).ready(function(){
         newsObjArray.forEach(newsObj => {
             let template = `
             <div class='each-news'>
-                <a style="display:flex;" href='${newsObj.link}'>
+                <a style="display:flex;" href='${newsObj.url}'>
                     <img class="news-img" src="${newsObj.preview}">
                 </a>
                 <div class='each-news--text-wrapper'>
-                    <a href='${newsObj.link}' class='each-news--title'>
+                    <a href='${newsObj.url}' class='each-news--title'>
                         ${newsObj.title}
                     </a>
                     <div class='each-news--metadata'>
@@ -61,13 +61,13 @@ $(document).ready(function(){
                         </div>
                         |
                         <div class='source'>
-                            <a href='${newsObj.link}'>${newsObj.source_name}</a>
+                            <a href='${newsObj.url}'>${newsObj.source_name}</a>
                         </div>
                     </div>
-                    <a href='${newsObj.link}' class='each-news--content'>
+                    <a href='${newsObj.url}' class='each-news--content'>
                         ${newsObj.desc}
                     </a>
-                    <a href="${newsObj.link}" class='each-news--read-more'>
+                    <a href="${newsObj.url}" class='each-news--read-more'>
                     (Read more...)
                     </a>
                 </div>

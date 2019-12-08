@@ -7,7 +7,7 @@ Hong Kong Tear Gas Mapping
 2. Follow the following image [![N|Solid](https://i.imgur.com/yj1Kcvd.png)](https://console.firebase.google.com/)
 3. Follow the following pattern to add a new news
 Document ID --> Click Auto-ID
-- `link` --> String, URL of news
+- `url` --> String, URL of news
 - `preview` --> String, URL of the image, if the news provider doesn't supply, you can make one and upload to imgur.com then get the image url, the URL usually end with .jpg or .png
 - `title` --> String, Title of the news
 - `time` --> timestamp, the website will based on this info to sort from new to old
