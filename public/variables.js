@@ -4,8 +4,12 @@ var tear_gas_lng=[];
 var tear_gas_tg_count=[];
 var tear_gas_date=[];
 var heat_map_variables=[];
-
-d3.csv("tg_data_adjusted.csv",function(d){
+if(window.location.origin.indexOf('localhost')>0){
+  //dev
+} else{
+  
+}
+d3.csv(window.location.origin + "/tg_data_adjusted.csv",function(d){
                 tear_gas_mid.push(d.mid);
                 tear_gas_lat.push(parseFloat(d.Lat));
                 tear_gas_lng.push(parseFloat(d.Lng));
