@@ -72,6 +72,9 @@
         }
     }
 </style>
+	
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
 <script src="http://<?php echo $_SERVER['HTTP_HOST'];?>/views/news/news.js"></script>
 <div class='news-wrapper'>
     <div class='news-inner-wrapper'>
