@@ -15,9 +15,11 @@ $ gulp build
 git clone https://laradock.io/
 ```
 Folder structure:
+<pre>
 / Folder
 ------- / Laradock
 ------- / tgmap-main
+</pre>
 
 2) Modify the `.env` file from laradock folder, change the `APP_CODE_PATH_HOST=` to `APP_CODE_PATH_HOST=../tgmap-main` from the General Setup
 
