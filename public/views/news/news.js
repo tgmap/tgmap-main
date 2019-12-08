@@ -5,7 +5,7 @@ let newsObj1= {
     preview: "https://newsstatic.rthk.hk/images/mfile_1495343_1_L_20191130235911.jpg",
     title: "警方在彌敦道與亞皆老街交界施放催淚彈",
     time: "2019-11-30 HKT 23:52",
-    source: "RTHK",
+    source_name: "RTHK",
     desc: "有市民晚上在港鐵太子站外聚集，紀念8.31事件3個月，防暴警員多次在太子站外彌敦道，驅散聚集人士，並清理多處路障\。\
     \
     部分人轉到旺角站附近，C1出口有人縱火，消防員到場處理\。\
@@ -17,7 +17,7 @@ let newsObj2={
     preview: "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2019/11/1862/1048/AP19306376739276.jpg?ve=1&tl=1",
     title: "HK police fire tear gas at protesters",
     time: "2019-12-1 HKT 20:11",
-    source: "news.com.au",
+    source_name: "news.com.au",
     desc: "Anti-government protesters rallying in Hong Kong have been dispersed with tear gas after a lull in violence on the streets of the financial hub."
 }
 
@@ -39,7 +39,7 @@ let newsObjArray=[];newsObjArray.push(newsObj1,newsObj2);
                     </div>
                     |
                     <div class='source'>
-                        <a href='${newsObj.link}'>RTHK</a>
+                        <a href='${newsObj.link}'>${newsObj.source_name}</a>
                     </div>
                 </div>
                 <a href='${newsObj.link}' class='each-news--content'>
