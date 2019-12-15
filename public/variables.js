@@ -9,7 +9,7 @@ if(window.location.origin.indexOf('localhost')>0){
 } else{
   
 }
-d3.csv(window.location.origin + "/tg_data_adjusted.csv",function(d){
+d3.csv(window.location.origin + "/tg_data_adjusted-Jun12-Nov18_utf8.csv",function(d){
                 tear_gas_mid.push(d.mid);
                 tear_gas_lat.push(parseFloat(d.Lat));
                 tear_gas_lng.push(parseFloat(d.Lng));
